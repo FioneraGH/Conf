@@ -1,0 +1,13 @@
+alias ll="ls -al --color=tty"
+alias vi="vim"
+alias h="history"
+alias grep="grep --color=auto"
+alias cls="clear"
+alias rm="rm -i"
+alias cp="cp -i"
+alias mv="mv -i"
+alias mysqlr="mysql -u root -p"
+alias openmysql="sudo systemctl start mysqld"
+alias closemysql="sudo systemctl stop mysqld"
+
+PS1="\s-\v \u:\W> "
