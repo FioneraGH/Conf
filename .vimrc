@@ -10,7 +10,7 @@ set showcmd
 set number
 set completeopt+=longest
 ""font
-set gfn=Courier\ 10\ Pitch\ 11
+set gfn=Ubuntu\ Mono\ 11
 
 ""keymap
 nnoremap <F5> :!python %<CR>
