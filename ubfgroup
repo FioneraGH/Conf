@@ -1,0 +1,7 @@
+cdrom:x:24:fionera
+sudo:x:27:fionera
+dip:x:30:fionera
+plugdev:x:46:fionera
+lpadmin:x:115:fionera
+sambashare:x:131:fionera
+vboxusers:x:132:fionera
