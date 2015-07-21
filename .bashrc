@@ -13,5 +13,6 @@ alias openmysql="sudo systemctl start mysqld"
 alias closemysql="sudo systemctl stop mysqld"
 alias 1080p="xrandr --output LVDS1 --scale 1.4x1.4 --panning 1920x1080" 
 alias 768p="xrandr --output LVDS1 --scale 1x1 --panning 1366x768 "
+alias flushcache="echo 3 > /pro/sys/vm/drop_caches"
 
 PS1="\s-\v \u:\W> "
