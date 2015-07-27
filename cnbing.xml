@@ -1,9 +1,9 @@
 <SearchPlugin xmlns="http://www.mozilla.org/2006/browser/search/" >
-	<ShortName>九尾搜索</ShortName>
-	<Description>九尾搜索</Description>
+	<ShortName>必应搜索</ShortName>
+	<Description>Bing China</Description>
 	<InputEncoding>utf-8</InputEncoding>
 	<Image width="16" height="16">data:image/x-icon;base64,R0lGODlhEAAQAJECAP8AAAAAAP///wAAACH5BAEAAAIALAAAAAAQABAAAAIplI+py+0NogQuyBDEnEd2kHkfFWUamEzmpZSfmaIHPHrRguUm/fT+UwAAOw==</Image>
-	<Url type="text/html" method="GET" template="http://www.jwss.com/">
+	<Url type="text/html" method="GET" template="http://http://cn.bing.com/search">
 		<Param name="q" value="{searchTerms}"/>
 	</Url>
 </SearchPlugin>
