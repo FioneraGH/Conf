@@ -1,2 +1,2 @@
 export UNZIP="-O CP936"
-export vZIPINFO="-O CP936"
+export ZIPINFO="-O CP936"
