@@ -1,3 +1,6 @@
+#sudo alias to fix the alias not effect when using sudo command
+alias sudo="sudo "
+
 #apt-get alias
 alias apt-get="sudo aptitude"
 
