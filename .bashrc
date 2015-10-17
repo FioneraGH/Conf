@@ -1,5 +1,8 @@
-alias ll="ls -al --color=tty"
-alias l.="ls -l"
+#apt-get alias
+alias apt-get="sudo aptitude"
+
+#function alias
+alias ll="ls -alh --color=tty"
 alias vi="vim"
 alias cd..="cd .."
 alias h="history"
@@ -8,10 +11,20 @@ alias cls="clear"
 alias rm="rm -i"
 alias cp="cp -i"
 alias mv="mv -i"
+
+#mysql alias
 alias mysqlr="mysql -u root -p"
 alias openmysql="sudo systemctl start mysqld"
 alias closemysql="sudo systemctl stop mysqld"
+
+#performance alias
 alias flushcache="echo 3 > /proc/sys/vm/drop_caches"
 alias reswap="sudo swapoff -a;sudo swapon -a"
+alias showscheduler="cat /sys/block/sda/queue/scheduler;cat /sys/block/sdb/queue/scheduler;"
 
-PS1="\s-\v \u:\W> "
+#git alias
+alias status="git status"
+alias add="git add ."
+alias commit="git commit"
+alias rebase="git pull --rebase"
+alias push="git push"
