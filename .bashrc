@@ -1,11 +1,9 @@
 #sudo alias to fix the alias not effect when using sudo command
 alias sudo="sudo "
-
-#apt-get alias
-alias apt-get="sudo aptitude"
+alias vim="sudo vim"
 
 #function alias
-alias ll="ls -alh --color=tty"
+alias ll="ls -Alh --color=tty"
 alias vi="vim"
 alias cd..="cd .."
 alias h="history"
