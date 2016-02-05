@@ -1,6 +1,6 @@
 #sudo alias to fix the alias not effect when using sudo command
 alias sudo="sudo "
-alias vim="sudo vim"
+#alias vim="sudo vim"
 
 #function alias
 alias ll="ls -Alh --color=tty"

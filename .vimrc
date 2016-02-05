@@ -46,4 +46,5 @@ set gfn=Ubuntu\ Mono\ 11
 "keymap
 nnoremap <F5> :!python %<CR>
 nnoremap <F3> :!gcc -o %< %<CR>
+nnoremap <F10> :set wrap<CR>
 
