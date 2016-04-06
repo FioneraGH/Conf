@@ -10,7 +10,7 @@ syntax on
 set background=dark
 
 "set status bar always show
-set laststatus=2
+set laststatus=1
 
 "show current line number
 set ruler
@@ -46,5 +46,14 @@ set gfn=Ubuntu\ Mono\ 11
 "keymap
 nnoremap <F5> :!python %<CR>
 nnoremap <F3> :!gcc -o %< %<CR>
+map <silent> <F9> :!ctags -R<CR> :TlistUpdate<CR> :TlistToggle<CR> 
 nnoremap <F10> :set wrap<CR>
+
+"taglist
+let Tlist_Ctags_Cmd='/usr/bin/ctags'
+let Tlist_Show_One_File=0
+let Tlist_File_Fold_Auto_Close=1
+let Tlist_Exit_OnlyWindow=1
+let Tlist_Process_File_Always=1
+let Tlist_Auto_Open=1
 
