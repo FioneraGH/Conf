@@ -46,7 +46,7 @@ set gfn=Ubuntu\ Mono\ 11
 "keymap
 nnoremap <F5> :!python %<CR>
 nnoremap <F3> :!gcc -o %< %<CR>
-map <silent> <F9> :!ctags -R<CR> :TlistUpdate<CR> :TlistToggle<CR> 
+map <silent> <F4> :!ctags -R<CR> :TlistUpdate<CR> :TlistToggle<CR> 
 nnoremap <F10> :set wrap<CR>
 
 "taglist

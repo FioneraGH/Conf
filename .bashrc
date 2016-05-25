@@ -12,6 +12,7 @@ alias cls="clear"
 alias rm="rm -i"
 alias cp="cp -i"
 alias mv="mv -i"
+alias dpkgl="dpkg --get-selections | grep"
 
 #mysql alias
 alias mysqlr="mysql -u root -p"
