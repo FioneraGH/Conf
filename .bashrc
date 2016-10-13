@@ -30,3 +30,8 @@ alias add="git add ."
 alias commit="git commit"
 alias rebase="git pull --rebase"
 alias push="git push"
+
+
+#export
+export VISUAL="vim"
+export VSCODE_TSJS=1
