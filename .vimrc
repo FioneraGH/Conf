@@ -90,9 +90,10 @@ set gfn=Yahei\ Mono\ 11
 
 " keymap
 nnoremap <space> za
+nnoremap <F3> :NERDTreeMirror<CR>
+nnoremap <F3> :NERDTreeToggle<CR>
 
 nnoremap <F5> :!python %<CR>
-nnoremap <F3> :!gcc -o % < %<CR>
 nnoremap <F9> :set wrap<CR>
 
 " SimpylFold
