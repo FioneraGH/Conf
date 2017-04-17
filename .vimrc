@@ -14,6 +14,8 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 " All of your Plugins must be added before the following line
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tmhedberg/SimpylFold'
 Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdtree'
@@ -49,7 +51,7 @@ syntax on
 set background=dark
 
 " set status bar always show
-set laststatus=1
+set laststatus=2
 
 " show current line number
 set ruler
@@ -89,23 +91,35 @@ set autoindent
 set gfn=Yahei\ Mono\ 11
 
 " keymap
-nnoremap <space> za
-nnoremap <F3> :NERDTreeMirror<CR>
-nnoremap <F3> :NERDTreeToggle<CR>
-
 nnoremap <F5> :!python %<CR>
 nnoremap <F9> :set wrap<CR>
 
 " SimpylFold
 let g:SimpylFold_docstring_preview = 1
 
+nnoremap <space> za
+
+" NERDTree
+nnoremap <F3> :NERDTreeMirror<CR>
+nnoremap <F3> :NERDTreeToggle<CR>
+
 " YouCompleteMe
+set completeopt=longest,menu
+set pumheight=10
+
 let python_highlight_all=1
 let g:ycm_python_binary_path='python'
-let g:ycm_autoclose_preview_window_after_completion=1
 
+let g:ycm_autoclose_preview_window_after_completion=1
 let g:ycm_confirm_extra_conf=0
+let g:ycm_cache_omnifunc=0
 let g:ycm_min_num_of_chars_for_completion=1
 "let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/.ycm_extra_conf.py'
+let g:ycm_semantic_triggers =  {
+  \   'c' : ['->', '.','re![_a-zA-z0-9]'],
+  \   'cpp' : ['->', '.', '::','re![_a-zA-Z0-9]'],
+  \ }
+let g:ycm_key_invoke_completion = '<C-Space>'
+"inoremap <expr> <CR>    pumvisible() ? '<C-y>' : '<CR>'  
+map <leader>g   :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
-map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
