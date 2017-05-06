@@ -94,6 +94,9 @@ set gfn=Yahei\ Mono\ 11
 nnoremap <F5> :!python %<CR>
 nnoremap <F9> :set wrap<CR>
 
+nmap <C-S> :w!<CR>
+imap <C-S> <ESC>:w!<CR>i
+
 " SimpylFold
 let g:SimpylFold_docstring_preview = 1
 
