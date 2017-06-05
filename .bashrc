@@ -11,10 +11,10 @@ alias cls="clear"
 alias rm="rm -i"
 alias cp="cp -i"
 alias mv="mv -i"
-alias dpkgl="dpkg --get-selections | grep"
+alias dupdr="sudo dnf upgrade --exclude=npm --refresh"
 
 #mysql alias
-alias mysqlr="mysql -u root -p"
+alias mysqlr="mycli -u root -p"
 alias openmysql="sudo systemctl start mariadb"
 alias closemysql="sudo systemctl stop mariadb"
 
@@ -36,5 +36,7 @@ export JAVA_HOME=/home/fionera/LinuxIDE/jdk
 export CLASS_PATH=.:$JAVA_HOME/lib/tool.jar:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/jre/lib/rt.jar
 
 export PATH=$PATH:$HOME/.local/bin
+
+export HISTTIMEFORMAT="%F %Twho -u am i 2>/dev/null| awk '{print $NF}'|sed -e 's/[()]//g'whoami "
 
 eval $(thefuck --alias)
