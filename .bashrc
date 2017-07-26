@@ -14,7 +14,7 @@ alias mv="mv -i"
 alias dupdr="sudo dnf upgrade --exclude=npm --refresh"
 
 #mysql alias
-alias mysqlr="mycli -u root -p"
+alias mysqlr="mycli -u root -p root"
 alias openmysql="sudo systemctl start mariadb"
 alias closemysql="sudo systemctl stop mariadb"
 
@@ -38,5 +38,7 @@ export CLASS_PATH=.:$JAVA_HOME/lib/tool.jar:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/jre
 export PATH=$PATH:$HOME/.local/bin
 
 export HISTTIMEFORMAT="%F %Twho -u am i 2>/dev/null| awk '{print $NF}'|sed -e 's/[()]//g'whoami "
+
+export ELECTRON_MIRROR="https://npm.taobao.org/mirrors/electron/"
 
 eval $(thefuck --alias)
