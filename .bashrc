@@ -35,7 +35,7 @@ export VISUAL="vim"
 export JAVA_HOME=/home/fionera/LinuxIDE/jdk
 export CLASS_PATH=.:$JAVA_HOME/lib/tool.jar:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/jre/lib/rt.jar
 
-export PATH=$PATH:$HOME/.local/bin
+export PATH=$PATH:$HOME/.local/bin:$HOME/LinuxIDE/dotnet2
 
 export HISTTIMEFORMAT="%F %Twho -u am i 2>/dev/null| awk '{print $NF}'|sed -e 's/[()]//g'whoami "
 
