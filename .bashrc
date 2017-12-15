@@ -11,7 +11,10 @@ alias cls="clear"
 alias rm="rm -i"
 alias cp="cp -i"
 alias mv="mv -i"
-alias dupdr="sudo dnf upgrade --exclude=npm --refresh"
+alias dupdr="sudo dnf upgrade --exclude=kernel* --refresh"
+
+#ssh alias
+alias opensshd="sudo systemctl start sshd"
 
 #mysql alias
 alias mysqlr="mycli -u root -p root"
@@ -26,19 +29,24 @@ alias showscheduler="cat /sys/block/sda/queue/scheduler;cat /sys/block/sdb/queue
 #git alias
 alias rebase="git pull --rebase"
 
+#docker alias
+alias docker="sudo docker"
+
+#sadb alias
+alias adb="sadb"
+
 #close ctrls hangout terminal
 stty -ixon
 
 #export
 export VISUAL="vim"
+export MUTTER_ALLOW_HYBRID_GPUS=0
 
 export JAVA_HOME=/home/fionera/LinuxIDE/jdk
 export CLASS_PATH=.:$JAVA_HOME/lib/tool.jar:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/jre/lib/rt.jar
 
-export PATH=$PATH:$HOME/.local/bin:$HOME/LinuxIDE/dotnet2
-
-export HISTTIMEFORMAT="%F %Twho -u am i 2>/dev/null| awk '{print $NF}'|sed -e 's/[()]//g'whoami "
+export PATH=$HOME/.local/bin:$HOME/LinuxIDE/dotnet2:$PATH
 
 export ELECTRON_MIRROR="https://npm.taobao.org/mirrors/electron/"
 
-eval $(thefuck --alias)
+#eval $(thefuck --alias)
