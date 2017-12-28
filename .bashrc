@@ -2,7 +2,7 @@
 alias sudo="sudo "
 
 #function alias
-alias ll="ls -Alh --color=tty"
+alias ll="ls -Alh"
 alias vi="vim"
 alias cd..="cd .."
 alias h="history"
@@ -33,7 +33,7 @@ alias rebase="git pull --rebase"
 alias docker="sudo docker"
 
 #sadb alias
-alias adb="sadb"
+#alias adb="sadb"
 
 #close ctrls hangout terminal
 stty -ixon
