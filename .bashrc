@@ -42,10 +42,10 @@ stty -ixon
 export VISUAL="vim"
 export MUTTER_ALLOW_HYBRID_GPUS=0
 
-export JAVA_HOME=/home/fionera/LinuxIDE/jdk
+export JAVA_HOME=/Applications/Android Studio 3.1 Preview.app/Contents/jre/jdk/Contents/Home
 export CLASS_PATH=.:$JAVA_HOME/lib/tool.jar:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/jre/lib/rt.jar
 
-export PATH=$HOME/.local/bin:$HOME/LinuxIDE/dotnet2:$PATH
+export PATH=$HOME/.local/bin:$PATH
 
 export ELECTRON_MIRROR="https://npm.taobao.org/mirrors/electron/"
 
