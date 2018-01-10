@@ -39,6 +39,9 @@ filetype plugin indent on    " required
 
 " vundle config
 
+" Color Schema
+colo murphy
+
 " set text format
 set fileformat=unix
 set encoding=utf-8
@@ -88,7 +91,7 @@ set sts=4
 set autoindent
 
 " font
-set gfn=Yahei\ Mono\ 11
+set guifont=Fira\ Code:h14
 
 " keymap
 nnoremap <F5> :!python %<CR>
