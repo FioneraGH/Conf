@@ -1,5 +1,6 @@
 #sudo alias to fix the alias not effect when using sudo command
 alias sudo="sudo "
+alias vim="/Applications/MacVim.app/Contents/bin/mvim"
 
 #function alias
 alias ll="ls -Alh"
@@ -40,13 +41,10 @@ stty -ixon
 
 #export
 export VISUAL="vim"
-export MUTTER_ALLOW_HYBRID_GPUS=0
+#export MUTTER_ALLOW_HYBRID_GPUS=0
 
-export JAVA_HOME=/Applications/Android Studio 3.1 Preview.app/Contents/jre/jdk/Contents/Home
+export JAVA_HOME=/Applications/Android\ Studio\ 3.1\ Preview.app/Contents/jre/jdk/Contents/Home
 export CLASS_PATH=.:$JAVA_HOME/lib/tool.jar:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/jre/lib/rt.jar
-
-export PATH=$HOME/.local/bin:$PATH
 
 export ELECTRON_MIRROR="https://npm.taobao.org/mirrors/electron/"
 
-#eval $(thefuck --alias)
