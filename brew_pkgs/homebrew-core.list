@@ -1,0 +1,16 @@
+cmake
+cscope
+docker
+docker-compose
+docker-machine
+gdbm
+icu4c
+libyaml
+nmap
+node
+openssl
+python3
+readline
+sqlite
+unrar
+xz
