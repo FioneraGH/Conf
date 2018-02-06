@@ -6,11 +6,14 @@ docker-machine
 gdbm
 icu4c
 libyaml
+lighttpd
 nmap
 node
 openssl
+pcre
 python3
 readline
 sqlite
 unrar
 xz
+youtube-dl
