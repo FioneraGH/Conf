@@ -1,12 +1,9 @@
 cmake
 cscope
-docker
-docker-compose
-docker-machine
 gdbm
 icu4c
-libyaml
 lighttpd
+mariadb
 nmap
 node
 openssl
