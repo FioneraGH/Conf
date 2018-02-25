@@ -1,2 +1,2 @@
 # Conf
-My Linux Software Configuration
+My Linux && macOS Software Configuration
