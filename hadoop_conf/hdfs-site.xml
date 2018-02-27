@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<!--
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License. See accompanying LICENSE file.
+-->
+
+<!-- Put site-specific property overrides in this file. -->
+
+<configuration>
+  <property>
+    <name>dfs.replication</name>
+    <value>3</value>
+  </property>
+  <property>
+    <name>dfs.namenode.name.dir</name>
+    <value>/home/ahadoop/hadoop-data/name</value>
+  </property>
+  <property>
+    <name>dfs.datanode.data.dir</name>
+    <value>/home/ahadoop/hadoop-data/data</value>
+  </property>
+  <property>
+    <name>dfs.namenode.checkpoint.dir</name>
+    <value>/home/ahadoop/hadoop-data/checkpoint</value>
+  </property>
+  <property>
+    <name>dfs.blocksize</name>
+    <value>67108864</value>
+  </property>
+  <property>
+    <name>dfs.namenode.handler.count</name>
+    <value>10</value>
+  </property>
+  <property>
+    <name>dfs.datanode.handler.count</name>
+    <value>10</value>
+  </property>
+  <property>
+    <name>dfs.nameservices</name>
+    <value>hdcluster</value>
+  </property>
+  <property>
+    <name>dfs.ha.namenodes.hdcluster</name>
+    <value>nn1,nn2</value>
+  </property>
+  <property>
+    <name>dfs.namenode.rpc-address.hdcluster.nn1</name>
+    <value>172.17.0.2:9000</value>
+  </property>
+  <property>
+    <name>dfs.namenode.rpc-address.hdcluster.nn2</name>
+    <value>172.17.0.3:9000</value>
+  </property>
+  <property>
+    <name>dfs.namenode.http-address.hdcluster.nn1</name>
+    <value>172.17.0.2:50070</value>
+  </property>
+  <property>
+    <name>dfs.namenode.http-address.hdcluster.nn2</name>
+    <value>172.17.0.3:50070</value>
+  </property>
+  <property>
+    <name>dfs.namenode.shared.edits.dir</name>
+    <value>qjournal://172.17.0.2:8485;172.17.0.3:8485;172.17.0.4:8485/hdcluster</value>
+  </property>
+  <property>
+    <name>dfs.client.failover.proxy.provider.hdcluster</name>
+    <value>org.apache.hadoop.hdfs.server.namenode.ha.ConfiguredFailoverProxyProvider</value>
+  </property>
+  <property>
+    <name>dfs.ha.automatic-failover.enabled.hdcluster</name>
+    <value>true</value>
+  </property>
+  <property>
+    <name>dfs.ha.fencing.methods</name>
+    <value>shell(/bin/true)</value>
+  </property>
+</configuration>

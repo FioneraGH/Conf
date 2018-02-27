@@ -1,9 +1,12 @@
 #!/bin/sh
 
 function _init(){
+    echo $(ioreg -l | grep "DisplayVendorID" | awk '{print $8}')
+    echo $(ioreg -l | grep "DisplayProductID" | awk '{print $8}')
 
-    VendorID="2533"
-    ProductID="1474"
+    VendorID="2533" // e.g.
+    ProductID="1474" // e.g.
+
     EDID=$(ioreg -l | grep "IODisplayEDID" | awk '{print $8}' | sed -e 's/.$//' -e 's/^.//')
 
     Vid=$(echo "obase=16;$VendorID" | bc | tr 'A-Z' 'a-z')
