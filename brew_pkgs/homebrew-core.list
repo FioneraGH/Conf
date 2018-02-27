@@ -1,8 +1,9 @@
 cmake
 cscope
+ffmpeg
 gdbm
 icu4c
-lighttpd
+lame
 mariadb
 nmap
 node
@@ -12,5 +13,7 @@ python3
 readline
 sqlite
 unrar
+x264
+xvid
 xz
 youtube-dl
