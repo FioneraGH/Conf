@@ -9,6 +9,7 @@ nmap
 node
 openssl
 pcre
+python
 python3
 readline
 sqlite
