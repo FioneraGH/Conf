@@ -10,11 +10,10 @@ node
 openssl
 pcre
 python
-python3
 readline
 sqlite
 unrar
 x264
 xvid
 xz
-youtube-dl
+outube-dl
