@@ -13,6 +13,7 @@ alias rm="rm -i"
 alias cp="cp -i"
 alias mv="mv -i"
 alias dupdr="sudo dnf upgrade --exclude=kernel* --refresh"
+alias lsp="lsof -n -P -i TCP -s TCP:LISTEN"
 
 #ssh alias
 alias opensshd="sudo systemctl start sshd"
@@ -31,10 +32,8 @@ alias showscheduler="cat /sys/block/sda/queue/scheduler;cat /sys/block/sdb/queue
 alias rebase="git pull --rebase"
 
 #docker alias
-alias docker="sudo docker"
+#alias docker="sudo docker"
 
-#sadb alias
-#alias adb="sadb"
 
 #close ctrls hangout terminal
 stty -ixon
@@ -47,4 +46,9 @@ export JAVA_HOME=/Library/Java/Home
 export CLASS_PATH=.:$JAVA_HOME/lib/tool.jar:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/jre/lib/rt.jar
 
 export ELECTRON_MIRROR="https://npm.taobao.org/mirrors/electron/"
+
+export LANG=zh_CN.UTF-8
+export LC_ALL=zh_CN.UTF-8
+
+export HOMEBREW_NO_AUTO_UPDATE=true
 

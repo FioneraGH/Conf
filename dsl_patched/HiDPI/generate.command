@@ -4,8 +4,8 @@ function _init(){
     echo $(ioreg -l | grep "DisplayVendorID" | awk '{print $8}')
     echo $(ioreg -l | grep "DisplayProductID" | awk '{print $8}')
 
-    VendorID="12516" # e.g.
-    ProductID="745" # e.g.
+    VendorID="2533" # e.g.
+    ProductID="1715" # e.g.
 
     EDID=$(ioreg -l | grep "IODisplayEDID" | awk '{print $8}' | sed -e 's/.$//' -e 's/^.//')
 
