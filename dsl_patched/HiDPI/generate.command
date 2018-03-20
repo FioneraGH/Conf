@@ -41,11 +41,11 @@ function generate_hidpi() {
     <key>scale-resolutions</key>
     <array>
         <data>
-	    AAAMgAAABwgA
-	    </data>
-	    <data>
-	    AAAKrAAABgAA
-	    </data>
+            AAAMgAAABwgA
+        </data>
+        <data>
+            AAAKrAAABgAA
+        </data>
     </array>
     <key>target-default-ppmm</key>
     <real>10.0699301</real>
