@@ -3,12 +3,15 @@ cscope
 ffmpeg
 gdbm
 icu4c
+kubernetes-cli
 lame
 mariadb
 nmap
 node
 openssl
+p7zip
 pcre
+pv
 python
 readline
 sqlite
@@ -16,4 +19,4 @@ unrar
 x264
 xvid
 xz
-outube-dl
+youtube-dl

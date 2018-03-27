@@ -49,6 +49,9 @@ function generate_hidpi() {
         <data>
             AAAKrAAABgAA
         </data>
+        <data>
+            AAAKAAAABaAA
+        </data>
     </array>
     <key>target-default-ppmm</key>
     <real>10.0699301</real>
