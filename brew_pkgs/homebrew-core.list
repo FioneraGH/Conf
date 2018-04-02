@@ -6,6 +6,7 @@ icu4c
 kubernetes-cli
 lame
 mariadb
+mycli
 nmap
 node
 openssl
