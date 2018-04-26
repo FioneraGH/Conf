@@ -5,7 +5,12 @@ export ZSH=~/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="pygmalion"
+#ZSH_THEME="pygmalion"
+ZSH_THEME="powerlevel9k/powerlevel9k"
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir vcs)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status history)
+POWERLEVEL9K_PROMPT_ON_NEWLINE=true
+POWERLEVEL9K_COLOR_SCHEME='dark'
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -86,3 +91,6 @@ source $ZSH/oh-my-zsh.sh
 . ~/.bashrc
 setopt no_nomatch
 
+
+# added by travis gem
+[ -f /Users/fionera/.travis/travis.sh ] && source /Users/fionera/.travis/travis.sh
