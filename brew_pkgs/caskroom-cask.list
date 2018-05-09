@@ -1,4 +1,4 @@
-docker
+docker-edge
 filezilla
 firefox
 google-chrome
@@ -7,7 +7,6 @@ iterm2
 java8
 karabiner-elements
 macvim
-openemu
 postman
 shadowsocksx-ng
 thunder

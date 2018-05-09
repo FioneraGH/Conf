@@ -3,13 +3,12 @@ cscope
 ffmpeg
 gdbm
 icu4c
-kubernetes-cli
 lame
 mariadb
 mas
 mycli
 nmap
-node
+node@8
 openssl
 p7zip
 pcre
