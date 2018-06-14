@@ -55,3 +55,4 @@ export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles
 
 # added by travis gem
 [ -f /Users/fionera/.travis/travis.sh ] && source /Users/fionera/.travis/travis.sh
+
