@@ -97,4 +97,6 @@ setopt no_nomatch
 
 # added by travis gem
 [ -f /Users/fionera/.travis/travis.sh ] && source /Users/fionera/.travis/travis.sh
-export PATH="/usr/local/opt/node@8/bin:$PATH"
+
+# export PATH="/usr/local/opt/node@8/bin:$PATH"
+
