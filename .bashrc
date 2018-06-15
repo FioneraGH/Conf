@@ -1,8 +1,8 @@
-#sudo alias to fix the alias not effect when using sudo command
+# sudo alias to fix the alias not effect when using sudo command
 alias sudo="sudo "
 alias vim="/Applications/MacVim.app/Contents/bin/vim"
 
-#function alias
+# function alias
 alias ll="ls -Alh"
 alias vi="vim"
 alias cd..="cd .."
@@ -15,27 +15,26 @@ alias mv="mv -i"
 alias dupdr="sudo dnf upgrade --exclude=kernel* --refresh"
 alias lsp="lsof -n -P -i TCP -s TCP:LISTEN"
 
-#ssh alias
+# ssh alias
 alias opensshd="sudo systemctl start sshd"
 
-#mysql alias
+# mysql alias
 alias mysqlr="mycli -u root -p root"
 alias openmysql="sudo systemctl start mariadb"
 alias closemysql="sudo systemctl stop mariadb"
 
-#performance alias
+# performance alias
 alias flushcache="echo 3 > /proc/sys/vm/drop_caches"
 alias reswap="sudo swapoff -a;sudo swapon -a"
-alias showscheduler="cat /sys/block/sda/queue/scheduler;cat /sys/block/sdb/queue/scheduler;"
+alias showscheduler="cat /sys/block/sda/queue/scheduler;"
 
-#git alias
-alias rebase="git pull --rebase"
-
-#docker alias
+# docker alias
 #alias docker="sudo docker"
 
+# brew args
+alias brewp="brew --force-bottle"
 
-#close ctrls hangout terminal
+# close ctrls hangout terminal
 stty -ixon
 
 #export
