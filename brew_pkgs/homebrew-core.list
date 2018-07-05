@@ -2,6 +2,7 @@ cmake
 cscope
 ffmpeg
 gdbm
+go
 icu4c
 lame
 mariadb
