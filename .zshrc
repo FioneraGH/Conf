@@ -98,5 +98,6 @@ setopt no_nomatch
 [ -f /Users/fionera/.travis/travis.sh ] && source /Users/fionera/.travis/travis.sh
 
 #export PATH="/usr/local/opt/node@8/bin:$PATH"
+export PATH="/Users/fionera/Library/Python/3.7/bin:$PATH"
 alias npm="/usr/local/bin/npm"
 
