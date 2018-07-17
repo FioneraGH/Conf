@@ -2,6 +2,7 @@ cmake
 cscope
 ffmpeg
 gdbm
+git-flow
 go
 icu4c
 lame
