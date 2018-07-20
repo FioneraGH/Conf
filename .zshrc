@@ -57,11 +57,11 @@ POWERLEVEL9K_DIR_DEFAULT_FOREGROUND='white'
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git git-flow)
 
 # User configuration
 
-export PATH=$PATH:"/Users/fionera/Library/Android/sdk/platform-tools"
+. ~/.bashrc
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -91,13 +91,5 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-. ~/.bashrc
 setopt no_nomatch
-
-# added by travis gem
-[ -f /Users/fionera/.travis/travis.sh ] && source /Users/fionera/.travis/travis.sh
-
-#export PATH="/usr/local/opt/node@8/bin:$PATH"
-export PATH="/Users/fionera/Library/Python/3.7/bin:$PATH"
-alias npm="/usr/local/bin/npm"
 
