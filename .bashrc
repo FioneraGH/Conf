@@ -32,25 +32,37 @@ alias showscheduler="cat /sys/block/sda/queue/scheduler;"
 #alias docker="sudo docker"
 
 # brew args
-alias brewp="brew --force-bottle"
+alias brup="brew upgrade --force-bottle"
 
 # close ctrls hangout terminal
-stty -ixon
+#stty -ixon
 
 #export
-export VISUAL="vim"
+echo "BP: $PATH"
+
+export VISUAL=vim
+export LANG=zh_CN.UTF-8
+export LC_ALL=zh_CN.UTF-8
 #export MUTTER_ALLOW_HYBRID_GPUS=0
+
+export ELECTRON_MIRROR=https://npm.taobao.org/mirrors/electron/
+
+export HOMEBREW_NO_AUTO_UPDATE=true
+export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles
 
 export JAVA_HOME=/Library/Java/Home
 export CLASS_PATH=.:$JAVA_HOME/lib/tool.jar:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/jre/lib/rt.jar
 
-export ELECTRON_MIRROR="https://npm.taobao.org/mirrors/electron/"
+export PUB_HOSTED_URL=https://pub.flutter-io.cn
+export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
 
-export LANG=zh_CN.UTF-8
-export LC_ALL=zh_CN.UTF-8
+export ANDROID_PLATFORM_TOOLS=/Users/fionera/Library/Android/sdk/platform-tools
 
-export HOMEBREW_NO_AUTO_UPDATE=true
-export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles
+export PYTHON_HOME=/Users/fionera/Library/Python/3.7
+export PATH=$ANDROID_PLATFORM_TOOLS:$PYTHON_HOME/bin:$PATH
+alias npm=/usr/local/bin/npm
+
+echo "AP: $PATH"
 
 # added by travis gem
 [ -f /Users/fionera/.travis/travis.sh ] && source /Users/fionera/.travis/travis.sh
