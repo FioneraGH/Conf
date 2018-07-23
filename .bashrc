@@ -59,7 +59,10 @@ export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
 export ANDROID_PLATFORM_TOOLS=/Users/fionera/Library/Android/sdk/platform-tools
 
 export PYTHON_HOME=/Users/fionera/Library/Python/3.7
-export PATH=$ANDROID_PLATFORM_TOOLS:$PYTHON_HOME/bin:$PATH
+
+export FLUTTER_HOME=/Users/fionera/Git/flutter
+
+export PATH=$ANDROID_PLATFORM_TOOLS:$PYTHON_HOME/bin:$FLUTTER_HOME/bin:$PATH
 alias npm=/usr/local/bin/npm
 
 echo "AP: $PATH"
