@@ -4,15 +4,15 @@ function _init(){
     echo $(ioreg -l | grep "DisplayVendorID" | awk '{print $8}')
     echo $(ioreg -l | grep "DisplayProductID" | awk '{print $8}')
 
-    VendorID="2533" # e.g.
-    ProductID="1715" # e.g.
+    VendorID="4268" # e.g.
+    ProductID="53442" # e.g.
 
     #EDID=$(ioreg -l | grep "IODisplayEDID" | awk '{print $8}' | sed -e 's/.$//' -e 's/^.//')
-     EDID=00ffffffffffff0009e5b3060000000001190104951f11780224109759548e271e505400000001010101010101010101010101010101ce1d56e250001e302616360035ad1000001ad11756e250001e302616360035ad1000001a000000fe00424f452043510a202020202020000000fe004e5431343057484d2d4e34310a002a
+    EDID=00ffffffffffff0009e5b3060000000001190104951f11780224109759548e271e505400000001010101010101010101010101010101ce1d56e250001e302616360035ad1000001ad11756e250001e302616360035ad1000001a000000fe00424f452043510a202020202020000000fe004e5431343057484d2d4e34310a002a
 
     Vid=$(echo "obase=16;$VendorID" | bc | tr 'A-Z' 'a-z')
     Pid=$(echo "obase=16;$ProductID" | bc | tr 'A-Z' 'a-z')
-    edID=$(echo $EDID | sed 's/../b5/21')
+    edID=$(echo $EDID | sed 's/../b5/21') # here change 0xb5 to 0x21
     EDid=$(echo $edID | xxd -r -p | base64)
 
     thisDir=$(dirname $0)
@@ -43,15 +43,6 @@ function generate_hidpi() {
     </data>
     <key>scale-resolutions</key>
     <array>
-        <data>
-            AAAMgAAABwgA
-        </data>
-        <data>
-            AAAKrAAABgAA
-        </data>
-        <data>
-            AAAKAAAABaAA
-        </data>
         <data>
             AAAFAAAAAtAAAAABACAAAA==
         </data>
