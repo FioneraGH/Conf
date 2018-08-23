@@ -51,7 +51,14 @@ export HOMEBREW_NO_AUTO_UPDATE=true
 export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles
 
 export JAVA_HOME=/Library/Java/Home
+export ANDROID_JAVA_HOME=$JAVA_HOME
 export CLASS_PATH=.:$JAVA_HOME/lib/tool.jar:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/jre/lib/rt.jar
+
+export REPO_URL=https://gerrit-googlesource.proxy.ustclug.org/git-repo
+export SOURCE_FETCH_URL=git://mirrors.ustc.edu.cn/aosp
+export USE_CCACHE=1
+export CCACHE_DIR=/Volumes/DATA/.ccache
+#prebuilts/misc/darwin-x86/ccache/ccache -M 50G
 
 export PUB_HOSTED_URL=https://pub.flutter-io.cn
 export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
