@@ -17,6 +17,7 @@ alias lsp="lsof -n -P -i TCP -s TCP:LISTEN"
 
 # ssh alias
 alias opensshd="sudo systemctl start sshd"
+alias closesshd="sudo systemctl stop sshd"
 
 # mysql alias
 alias mysqlr="mycli -u root -p root"
@@ -37,8 +38,11 @@ alias brup="brew upgrade --force-bottle"
 # close ctrls hangout terminal
 #stty -ixon
 
+# unlimit open fd count
+ulimit -S -n 1024
+
 #export
-echo "BP: $PATH"
+#echo "BP: $PATH"
 
 export VISUAL=vim
 export LANG=zh_CN.UTF-8
@@ -56,7 +60,7 @@ export CLASS_PATH=.:$JAVA_HOME/lib/tool.jar:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/jre
 
 export REPO_URL=https://gerrit-googlesource.proxy.ustclug.org/git-repo
 export SOURCE_FETCH_URL=git://mirrors.ustc.edu.cn/aosp
-export USE_CCACHE=1
+#export USE_CCACHE=1
 export CCACHE_DIR=/Volumes/DATA/.ccache
 #prebuilts/misc/darwin-x86/ccache/ccache -M 50G
 
