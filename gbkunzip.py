@@ -9,6 +9,7 @@ import zipfile
 def main():
     print("Processing File ", sys.argv[1])
 
+    # Here for auto closing ZipFile
     with zipfile.ZipFile(sys.argv[1], "r") as file:
         for name in file.namelist():
             utf8name = name.decode('gbk')
@@ -18,9 +19,8 @@ def main():
                 os.makedirs(pathname)
             data = file.read(name)
             if not os.path.exists(utf8name):
-                fo = open(utf8name, "w")
-                fo.write(data)
-                fo.close
+                with open(utf8name, "w") as fo:
+                    fo.write(data)
 
 
 if __name__ == '__main__':
