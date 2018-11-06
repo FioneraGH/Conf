@@ -1,0 +1,5 @@
+#!/bin/bash
+
+rm -f /Users/fionera/Library/Application\ Support/Beyond\ Compare/registry.dat 
+"`dirname "$0"`"/BCompare.real $@ 
+
