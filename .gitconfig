@@ -13,5 +13,3 @@
 	clean = git-lfs clean -- %f
 [color]
 	ui = auto
-[credential]
-	helper = store
