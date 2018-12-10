@@ -54,9 +54,9 @@ export ELECTRON_MIRROR=https://npm.taobao.org/mirrors/electron/
 export HOMEBREW_NO_AUTO_UPDATE=true
 export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles
 
-export JAVA_HOME=/Library/Java/Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/openjdk-11.0.1.jdk/Contents/Home
 export ANDROID_JAVA_HOME=$JAVA_HOME
-export CLASS_PATH=.:$JAVA_HOME/lib/tool.jar:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/jre/lib/rt.jar
+export CLASS_PATH=.:$JAVA_HOME/lib/
 
 export REPO_URL=https://gerrit-googlesource.proxy.ustclug.org/git-repo
 export SOURCE_FETCH_URL=git://mirrors.ustc.edu.cn/aosp
