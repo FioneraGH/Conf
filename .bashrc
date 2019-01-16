@@ -56,7 +56,6 @@ export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles
 
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/openjdk-11.0.1.jdk/Contents/Home
 export ANDROID_JAVA_HOME=$JAVA_HOME
-export CLASS_PATH=.:$JAVA_HOME/lib/
 
 export REPO_URL=https://gerrit-googlesource.proxy.ustclug.org/git-repo
 export SOURCE_FETCH_URL=git://mirrors.ustc.edu.cn/aosp
