@@ -1,6 +1,7 @@
 autoconf
 automake
 axel
+cmake
 cocoapods
 gdbm
 gettext
@@ -15,6 +16,7 @@ libusb
 libxml2
 libzip
 mas
+nmap
 node
 openssl
 pkg-config
@@ -23,6 +25,7 @@ readline
 repo
 sphinx-doc
 sqlite
+trash
 unrar
 usbmuxd
 xz
