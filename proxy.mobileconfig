@@ -22,7 +22,7 @@
 			<key>ProxyPACFallbackAllowed</key>
 			<true/>
 			<key>ProxyPACURL</key>
-			<string>file:///var/mobile/proxy.pac</string>
+			<string>https://raw.githubusercontent.com/essandess/easylist-pac-privoxy/master/proxy.pac</string>
 			<key>ProxyType</key>
 			<string>Auto</string>
 		</dict>
