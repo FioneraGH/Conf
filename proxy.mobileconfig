@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>PayloadDescription</key>
+			<string>Global HTTP Proxy</string>
+			<key>PayloadDisplayName</key>
+			<string>Global HTTP Proxy</string>
+			<key>PayloadIdentifier</key>
+			<string>com.apple.proxy.http.global.58DD6E7B-6D67-4FE6-B051-CA44AA9D28EC</string>
+			<key>PayloadType</key>
+			<string>com.apple.proxy.http.global</string>
+			<key>PayloadUUID</key>
+			<string>58DD6E7B-6D67-4FE6-B051-CA44AA9D28EC</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>ProxyCaptiveLoginAllowed</key>
+			<true/>
+			<key>ProxyPACFallbackAllowed</key>
+			<true/>
+			<key>ProxyPACURL</key>
+			<string>https://raw.githubusercontent.com/essandess/easylist-pac-privoxy/master/proxy.pac</string>
+			<key>ProxyType</key>
+			<string>Auto</string>
+		</dict>
+	</array>
+	<key>PayloadDisplayName</key>
+	<string>EasyList Proxy</string>
+	<key>PayloadIdentifier</key>
+	<string>com.fionera.proxy.2669D848-F147-4FA0-A927-D4FD88AAAC02</string>
+	<key>PayloadRemovalDisallowed</key>
+	<false/>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadUUID</key>
+	<string>2669D848-F147-4FA0-A927-D4FD88AAAC02</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+</dict>
+</plist>
